@@ -8,7 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeroComponent } from './hero/hero.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
-import { AbouComponent } from './abou/abou.component';
+import { AbouComponent } from './about/abou.component';
 import { TestamonialsComponent } from './testamonials/testamonials.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
