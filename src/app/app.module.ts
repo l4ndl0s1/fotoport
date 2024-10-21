@@ -21,14 +21,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     GalleryComponent,
     ContactComponent,
     AbouComponent,
-    TestamonialsComponent
+    TestamonialsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
