@@ -8,9 +8,10 @@ import { FooterComponent } from './footer/footer.component';
 import { HeroComponent } from './hero/hero.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
-import { AbouComponent } from './abou/abou.component';
+
 import { TestamonialsComponent } from './testamonials/testamonials.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -20,15 +21,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HeroComponent,
     GalleryComponent,
     ContactComponent,
-    AbouComponent,
-    TestamonialsComponent
+    AboutComponent,
+    TestamonialsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
