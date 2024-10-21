@@ -1,12 +1,10 @@
 <div class="grid">
   <div class="image-container" *ngFor="let image of images">
-    <img
-      [src]="image.src"
-      [alt]="image.name"
-      [width]="image.width"
-      [height]="image.height"
-      [class]="image.class"
-    />
-    <div class="overlay">{{ image.name }}</div>
+    <img [src]="image.src" [alt]="image.name" />
+    <div class="overlay">
+      <p>{{ image.name }}</p>
+
+      <p>{{ image.loacation }}</p>
+    </div>
   </div>
 </div>
