@@ -1,4 +1,4 @@
-img{
+.img{
     width: 100%;
     height: 90vh;
     margin-bottom: 3rem;
@@ -18,3 +18,12 @@ span{
     color: rgb(211, 175, 120);
     font-style: oblique;
 }
+#profil{
+z-index: -1;
+position: absolute;
+right:0
+}
+.costel{
+    width: 53.5rem;
+}
+   
