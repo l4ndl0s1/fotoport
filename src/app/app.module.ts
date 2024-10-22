@@ -9,7 +9,7 @@ import { HeroComponent } from './hero/hero.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
 
-import { TestamonialsComponent } from './testamonials/testamonials.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutComponent } from './about/about.component';
 
@@ -22,7 +22,7 @@ import { AboutComponent } from './about/about.component';
     GalleryComponent,
     ContactComponent,
     AboutComponent,
-    TestamonialsComponent,
+    TestimonialsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

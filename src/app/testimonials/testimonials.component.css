@@ -1,0 +1,26 @@
+.carousel-item {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa; /* Change this to your desired background color */
+}
+
+.carousel-item .img img {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%; /* Make the image circular */
+}
+
+.carousel-item h2 {
+    color: #333; /* Change the text color as needed */
+}
+
+.carousel-item p {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.carousel-item footer {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
