@@ -29,6 +29,7 @@
   z-index: 10;
   height: 170px;
   width: 170px;
+
   animation: moveAlongBorder 100s linear infinite;
 }
 
