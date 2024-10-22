@@ -9,7 +9,7 @@ export class ImageService {
   private images: Image[] = [
     {
       id: 1,
-      src: 'image_1.webp',
+      src: 'funny-1.jpg',
       name: 'Bear',
       loacation: 'Alaska',
       year: 2004,
@@ -17,7 +17,7 @@ export class ImageService {
     },
     {
       id: 2,
-      src: 'image_2.jpg',
+      src: 'funny-2.webp',
       name: 'Sea',
       loacation: 'Swiss',
       year: 2021,
@@ -25,7 +25,7 @@ export class ImageService {
     },
     {
       id: 3,
-      src: 'image_3.jpg',
+      src: 'funny-3.jpg',
       name: 'Red Wood',
       loacation: 'Romania',
       year: 2022,
@@ -33,7 +33,7 @@ export class ImageService {
     },
     {
       id: 4,
-      src: 'image_4.jpg',
+      src: 'funny-4.jpg',
       name: 'Turtle',
       loacation: 'Austria',
       year: 2001,
@@ -42,7 +42,7 @@ export class ImageService {
 
     {
       id: 4,
-      src: 'image_6.jpg',
+      src: 'funny-5.jpg',
       name: 'mountain see',
       loacation: 'Bosnia',
       year: 2011,
@@ -50,7 +50,7 @@ export class ImageService {
     },
     {
       id: 5,
-      src: 'image_7.jpg',
+      src: 'funny-6.png',
       name: 'Vineyard',
       loacation: 'Hungery',
       year: 2003,
