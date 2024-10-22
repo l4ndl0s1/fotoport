@@ -1,16 +1,26 @@
+.navbar {
+  background-color: #f1f0e8;
+}
+#light {
+  color: #8f076b;
+}
+
+#dark {
+  color: #96b6c5;
+}
+
 .navbar-nav {
-    margin-left: auto; /* Aligns the nav items to the right */
+  background-color: #f1f0e8;
+  margin-left: auto;
 }
 
 .navbar-nav .nav-link {
-    margin-right: 15px; /* Adjust the value as needed */
+  margin-right: 15px;
+  color: #96b6c5;
 }
 
 @media (min-width: 768px) {
-    .offcanvas {
-        display: none; /* Hide offcanvas on larger screens */
-    }
+  .offcanvas {
+    display: none;
+  }
 }
-
-
-
