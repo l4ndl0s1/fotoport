@@ -6,12 +6,13 @@
   padding: 1rem;
   margin-left: 4rem;
   margin-right: 4rem;
-  background: #96b6c5;
-  border-radius: 16px;
+  background: #f1f0e8;
+
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 5px;
+  color: #96b6c5;
 }
 
 .heading-wrapper {
