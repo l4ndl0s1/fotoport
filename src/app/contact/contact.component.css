@@ -1,0 +1,28 @@
+form {
+  width: 800px;
+  height: 400px;
+  margin-inline: auto;
+  border: 1px solid black;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  box-shadow: 5px 5px;
+  color: #96b6c5;
+}
+
+div {
+  margin-inline: auto;
+  text-align: start;
+}
+
+.form-group {
+  padding: 0.5rem;
+}
+
+.form-check {
+  padding: 0.5em;
+  margin-left: 1.5em;
+}
+
+.btn-primary {
+  margin-left: 1em;
+}
