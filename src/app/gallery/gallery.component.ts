@@ -44,26 +44,6 @@ export class GalleryComponent implements OnInit {
       this.displayLimit += increment;
       this.lastLoadedIndex += increment;
     }
-
-    setTimeout(() => {
-      if (!this.allImagesLoaded) {
-        const buttonArray = this.loadMoreButton.toArray();
-        if (buttonArray.length > 0) {
-          buttonArray[0].nativeElement.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-          });
-        }
-      } else {
-        const imagesArray = this.imageContainers.toArray();
-        if (imagesArray.length > 0) {
-          imagesArray[imagesArray.length - 1].nativeElement.scrollIntoView({
-            behavior: 'smooth',
-            block: 'end',
-          });
-        }
-      }
-    }, 100);
   }
 
   openImage(image: Image) {
