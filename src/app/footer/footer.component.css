@@ -1,0 +1,17 @@
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .fab {
+    font-size: 24px;
+    color: #333;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
