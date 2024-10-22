@@ -1,10 +1,29 @@
 <div class="grid">
-  <div class="image-container" *ngFor="let image of images">
+  <img class="grid-heading" src="pic.png" alt="head" />
+
+  <div
+    class="image-container"
+    *ngFor="let image of images | slice : 0 : displayLimit; let i = index"
+    (click)="openImage(image)"
+  >
     <img [src]="image.src" [alt]="image.name" />
     <div class="overlay">
       <p>{{ image.name }}</p>
-
       <p>{{ image.loacation }}</p>
     </div>
+  </div>
+
+  <button
+    class="load-more-button"
+    *ngIf="!allImagesLoaded"
+    (click)="loadMore()"
+  >
+    give me more!
+  </button>
+</div>
+
+<div *ngIf="selectedImage" class="modal" (click)="closeModal()">
+  <div class="modal-content">
+    <img [src]="selectedImage.src" [alt]="selectedImage.name" />
   </div>
 </div>

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Image } from './models/images.module';
+import { delay, Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -63,7 +64,7 @@ export class ImageService {
     },
   ];
 
-  getImages(): Image[] {
-    return this.images;
+  getImages(): Observable<Image[]> {
+    return of(this.images).pipe(delay(500));
   }
 }
