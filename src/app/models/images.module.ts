@@ -3,4 +3,6 @@ export interface Image {
   src: string;
   name: string;
   loacation: string;
+  year: number;
+  price: number;
 }
