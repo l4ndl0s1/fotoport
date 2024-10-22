@@ -78,14 +78,13 @@ img {
   display: block;
   font: 1.5em sans-serif;
   transition: transform 0.3s ease;
-  color: #96b6c5;
   padding: 1rem;
   background: #f1f0e8;
   border-radius: 15px;
   grid-column: 1 / -1;
   justify-self: center;
   margin-top: 1rem;
-  border: none;
+  border: solid #96b6c5 1 px;
   cursor: pointer;
 }
 
