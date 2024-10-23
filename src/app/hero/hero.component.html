@@ -14,7 +14,14 @@
       <img src="funny-hero.jpg" class="d-block img" alt="..." />
     </div>
     <div id="profil" class="photograph">
-      <img class="costel" src="terry.png" alt="" />
+      <audio #hoverSound src="Morgan2.m4a" preload="auto"></audio>
+      <img
+        class="costel"
+        src="terry.png"
+        alt=""
+        (mouseenter)="playSound()"
+        (mouseleave)="stopSound()"
+      />
       <div class="text">
         <h1>HI I'M<span> COSTEL GIGOLO</span></h1>
         <h4>Photographer</h4>
