@@ -13,6 +13,12 @@ h1 {
   background: #f1f0e8;
   border: 1px solid blueviolet;
 }
+.buttonl {
+  transform: rotate(-13deg);
+}
+.buttonr {
+  transform: rotate(7deg);
+}
 .text {
   color: blueviolet;
   text-decoration: none;
@@ -36,4 +42,24 @@ h1 {
   backdrop-filter: blur(5px);
 
   -webkit-backdrop-filter: blur(5px);
+}
+.videpsup {
+  background-color: cyan;
+  z-index: 2;
+  color: blueviolet;
+  transform: rotate(-8deg);
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.center {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: end;
+  padding-right: 1rem;
+}
+
+.name {
+  background-color: cyan;
 }
