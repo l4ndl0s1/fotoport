@@ -7,6 +7,8 @@ form {
   margin-bottom: 2em;
   box-shadow: 5px 5px;
   color: #96b6c5;
+  margin-bottom: 8rem;
+  transform: rotate(-10deg);
 }
 
 div {
@@ -16,6 +18,7 @@ div {
 
 .form-group {
   padding: 0.5rem;
+  transform: rotate(180deg);
 }
 
 .form-check {
@@ -23,6 +26,31 @@ div {
   margin-left: 1.5em;
 }
 
+.form-check-input {
+  color: blueviolet;
+  background: cyan;
+  height: 30px;
+  width: 30px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(8deg);
+}
+.form-check-input:checked {
+  background: orange;
+  transform: rotate(98deg);
+}
 .btn-primary {
   margin-left: 1em;
+  background-color: cyan;
+  color: blueviolet;
+}
+
+.form-check {
+  color: blueviolet;
+  font-size: 1.5rem;
+  transform: rotate(-90deg);
+}
+.ccc {
+  transform: rotate(-190deg);
+  text-align: center;
+  top: 14px;
 }

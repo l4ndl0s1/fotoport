@@ -1,12 +1,22 @@
+<h1>SUPER AMAZING FOTOS</h1>
 <div class="grid">
-  <img class="grid-heading" src="terry_small.png" alt="head" />
+  <audio #hoverSound src="pig.mp3" preload="auto"></audio>
+  <audio #hoverSound1 src=" turkey.mp3" preload="auto"></audio>
+
+  <img
+    class="grid-heading"
+    src="terry_small.png"
+    alt="head"
+    (mouseenter)="playSound()"
+    (mouseleave)="stopSound()"
+  />
 
   <div
     class="image-container"
-    *ngFor="let image of images | slice : 0 : displayLimit; let i = index"
+    *ngFor="let image of images | slice : 0 : displayLimit"
     (click)="openImage(image)"
   >
-    <img [src]="image.src" [alt]="image.name" />
+    <img [src]="image.src" [alt]="image.name" loading="lazy" />
     <div class="overlay">
       <p>Title: {{ image.name }}</p>
       <p>Location: {{ image.loacation }}</p>
@@ -20,7 +30,7 @@
     *ngIf="!allImagesLoaded"
     (click)="loadMore()"
   >
-    give me more!
+    Give me more!
   </button>
 </div>
 

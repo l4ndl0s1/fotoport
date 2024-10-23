@@ -1,35 +1,30 @@
+h1 {
+  transform: rotate(2deg);
+  text-align: left;
+  color: cyan;
+  background-color: blueviolet;
+  padding: 0.6rem;
+}
 .grid {
-  position: relative;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
   padding: 1rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  background: #f1f0e8;
-
+  margin: 0 4rem;
+  background: cyan;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  box-shadow: 5px 5px;
   color: #96b6c5;
-}
-
-.heading-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
+  position: relative;
+  transform: rotate(2deg);
 }
 
 .grid-heading {
   position: absolute;
   z-index: 10;
-  height: 170px;
   width: 170px;
-
+  height: 170px;
   animation: moveAlongBorder 100s linear infinite;
 }
 
@@ -63,29 +58,24 @@
 
 .image-container {
   position: relative;
+  width: 100%;
+  padding-top: 75%;
   overflow: hidden;
+  cursor: pointer;
+  background: #f1f0e8;
+  border-radius: 8px;
+  border: 1px solid blueviolet;
 }
 
-img {
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  display: cover;
-
+  object-fit: cover;
   transition: transform 0.3s ease;
-}
-
-.load-more-button {
-  display: block;
-  font: 1.5em sans-serif;
-  transition: transform 0.3s ease;
-  padding: 1rem;
-  background: #f1f0e8;
-  border-radius: 15px;
-  grid-column: 1 / -1;
-  justify-self: center;
-  margin-top: 1rem;
-  border: solid #96b6c5 1 px;
-  cursor: pointer;
+  border-radius: 8px;
 }
 
 .image-container:hover img {
@@ -94,14 +84,13 @@ img {
 
 .overlay {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  font-size: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
   top: 0;
   left: 0;
-  background: rgba(200, 161, 42, 0.6);
-  color: white;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  background: rgba(111, 139, 167, 0.6);
+  color: cyan;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,10 +98,43 @@ img {
   text-align: center;
   opacity: 0;
   transition: opacity 0.3s ease;
+  border-radius: 8px;
 }
 
 .image-container:hover .overlay {
   opacity: 1;
+}
+
+.load-more-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background: #f1f0e8;
+  border: 1px solid blueviolet;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: blueviolet;
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 100%;
+  max-width: 300px;
+  transform: rotate(6deg);
+}
+
+@media (max-width: 1000px) {
+  .load-more-button {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .load-more-button {
+    max-width: 200px;
+  }
+}
+
+.load-more-button:hover {
+  background: #e0dfd4;
 }
 
 .modal {
@@ -121,48 +143,51 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 100;
-  cursor: pointer;
 }
 
 .modal-content {
-  position: relative;
   max-width: 90%;
   max-height: 90%;
-  text-align: center;
+  position: relative;
 }
 
-.modal img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid blueviolet;
 }
 
 .modal-content p {
-  color: black;
-
+  color: white;
   margin-top: 0.5rem;
+  text-align: center;
 }
 
 @media (max-width: 1000px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 800px) {
-  .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 0 2rem;
   }
 }
 
 @media (max-width: 600px) {
   .grid-heading {
-    font-size: 1.5rem;
-    padding: 0.3rem 0.6rem;
+    width: 120px;
+    height: 120px;
+  }
+
+  .overlay {
+    font-size: 0.9rem;
+  }
+
+  .load-more-button {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
   }
 }
