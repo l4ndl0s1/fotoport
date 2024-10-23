@@ -1,22 +1,33 @@
-.navbar {
-  width: 100% !important;
-  height: 5rem !important;
+.logo {
+  padding: 2rem;
 }
 .navbar {
   background-color: #f4f6c7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
 }
+
 #light {
   color: #8f076b;
+  transform: rotate(5deg);
 }
 
 #dark {
   color: #96b6c5;
+  transform: rotate(5deg);
 }
 
 .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   background-color: #a3efe9;
   margin-left: auto;
-  width: 70%;
+  padding: 2rem;
+  width: auto;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
 }
 
 .navbar-nav .nav-link {
@@ -24,11 +35,27 @@
   color: #96b6c5;
 }
 
+.me-1,
+.me-2,
+.me-3 {
+  margin-top: 1em;
+  font-size: 20px;
+}
+
 .me-1 {
   color: rgb(255, 174, 0);
-  margin-top: 1em;
   margin-left: 2rem;
+}
+
+.me-2 {
+  color: rgb(108, 180, 0);
+  margin-left: 1rem;
+}
+
+.me-3 {
+  color: rgb(255, 0, 0);
   font-size: 40px;
+  margin-left: 1rem;
 }
 
 .rotate {
@@ -37,18 +64,6 @@
 
 .rotate2 {
   transform: rotate(-13deg);
-  margin-top: 3em;
-}
-.me-2 {
-  color: rgb(108, 180, 0);
-  font-size: 35px;
-  margin-left: 20rem;
-}
-
-.me-3 {
-  color: rgb(255, 0, 0);
-  font-size: 120px;
-  margin-left: 5rem;
 }
 
 .rotate3 {
@@ -64,10 +79,42 @@
   margin-left: 3em;
 }
 
+.navbar-toggler {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #a3efe9;
+    width: 100%;
+  }
+
   #signature {
     font-weight: 200;
     font-style: normal;
     font-size: 1.5rem;
+  }
+
+  .me-1,
+  .me-2,
+  .me-3 {
+    font-size: 25px;
+    margin-left: 1rem;
+  }
+
+  .navbar-nav.active {
+    display: flex;
+  }
+  .logo {
+    transform: rotate(30deg);
   }
 }

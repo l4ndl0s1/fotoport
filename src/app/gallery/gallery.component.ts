@@ -16,8 +16,8 @@ export class GalleryComponent implements OnInit {
   constructor(private imageService: ImageService) {}
 
   ngOnInit(): void {
-    this.imageService.getImages().subscribe((data: Image[]) => {
-      this.images = data;
+    this.imageService.getImages().subscribe((images) => {
+      this.images = images;
     });
   }
 
@@ -38,6 +38,7 @@ export class GalleryComponent implements OnInit {
   closeModal(): void {
     this.selectedImage = null;
   }
+
   playSound(): void {
     this.hoverSound.nativeElement.play();
   }
