@@ -5,29 +5,35 @@ h1 {
   background-color: blueviolet;
   padding: 0.6rem;
 }
+video {
+  background: rgb(255, 247, 0);
+  width: 100%;
+  height: auto;
+}
+
 .costumbutton {
   border: 1px solid blueviolet;
   border-radius: 15px;
-
-  font-size: 1.2rem;
-  background: #f1f0e8;
-  border: 1px solid blueviolet;
+  width: 100%;
+  background-color: #f1f0e8;
 }
+
 .buttonl {
   transform: rotate(-13deg);
+  width: 100%;
 }
+
 .buttonr {
   transform: rotate(7deg);
+  width: 100%;
 }
+
 .text {
   color: blueviolet;
   text-decoration: none;
 }
 
-#light {
-  color: blueviolet;
-}
-
+#light,
 #dark {
   color: blueviolet;
 }
@@ -35,14 +41,17 @@ h1 {
 .costumbutton:hover {
   background: #8d9f9c;
 }
+
 .container {
   transform: rotate(-3deg);
   background: cyan;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
-
   -webkit-backdrop-filter: blur(5px);
+  padding: 1rem;
+  border-radius: 15px;
 }
+
 .videpsup {
   background-color: yellow;
   z-index: 2;
@@ -50,16 +59,44 @@ h1 {
   transform: rotate(-8deg);
   font-weight: bold;
   border-radius: 15px;
+  position: absolute;
+  bottom: 10px;
+  left: 1px;
+  padding: 0.2rem;
 }
 
 .center {
   display: flex;
-  margin: 0 auto;
+  justify-content: center;
   align-items: center;
-  justify-content: end;
-  padding-right: 1rem;
+  padding: 0.5 1rem;
 }
 
 .name {
   background-color: rgb(255, 84, 212);
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    text-align: center;
+    transform: rotate(0deg);
+  }
+
+  .container {
+    transform: rotate(0deg);
+    padding: 1rem;
+  }
+
+  .buttonl,
+  .buttonr {
+    transform: rotate(0deg);
+  }
+
+  .videpsup {
+    transform: rotate(0deg);
+    position: static;
+    padding: 0.1rem;
+    border-radius: 0;
+  }
 }

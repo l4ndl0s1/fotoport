@@ -1,4 +1,4 @@
-<audio #hoverSound src="razecar.mp3" preload="auto"></audio>
+<audio #clickSound src="razecar.mp3" preload="auto"></audio>
 <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -34,7 +34,7 @@
     type="button"
     data-bs-target="#testimonialsCarousel"
     data-bs-slide="prev"
-    (mouseenter)="playSound()"
+    (click)="playSound()"
   >
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
@@ -44,7 +44,7 @@
     type="button"
     data-bs-target="#testimonialsCarousel"
     data-bs-slide="next"
-    (mouseenter)="playSound()"
+    (click)="playSound()"
   >
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>

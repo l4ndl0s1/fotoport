@@ -1,22 +1,31 @@
-.navbar {
-  width: 100% !important;
-  height: 5rem !important;
+.logo {
+  padding: 2rem;
 }
 .navbar {
   background-color: #f4f6c7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
 }
+
 #light {
   color: #8f076b;
+  transform: rotate(5deg);
 }
 
 #dark {
   color: #96b6c5;
+  transform: rotate(5deg);
 }
 
 .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   background-color: #a3efe9;
   margin-left: auto;
-  width: 70em;
+  width: 70%;
 }
 
 .navbar-nav .nav-link {
@@ -24,17 +33,20 @@
   color: #96b6c5;
 }
 
-@media (min-width: 768px) {
-  .offcanvas {
-    display: none;
-  }
-}
-
 .me-1 {
   color: rgb(255, 174, 0);
-  margin-top: 1em;
   margin-left: 2rem;
+}
+
+.me-2 {
+  color: rgb(108, 180, 0);
+  margin-left: 1rem;
+}
+
+.me-3 {
+  color: rgb(255, 0, 0);
   font-size: 40px;
+  margin-left: 1rem;
 }
 
 .rotate {
@@ -53,9 +65,8 @@
 
 .me-3 {
   color: rgb(255, 0, 0);
-  font-size: 4.5rem;
+  font-size: 120px;
   margin-left: 5rem;
-
 }
 
 .rotate3 {
@@ -69,4 +80,12 @@
   font-size: 3.5rem;
   transform: rotate(-20deg);
   margin-left: 3em;
+}
+
+@media (max-width: 768px) {
+  #signature {
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.5rem;
+  }
 }

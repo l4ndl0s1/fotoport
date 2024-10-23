@@ -1,17 +1,16 @@
 footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 footer .fab {
-    font-size: 24px;
-    color: #333;
+  font-size: 24px;
+  color: blueviolet;
 }
 
 footer p {
-    margin: 0;
-    font-size: 14px;
-    color: #666;
+  margin: 0;
+  font-size: 14px;
+  color: cyan;
 }
-
