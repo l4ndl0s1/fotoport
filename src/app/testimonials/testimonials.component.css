@@ -1,7 +1,7 @@
 .carousel-item {
     text-align: center;
     padding: 20px;
-    background-color: #f8f9fa; 
+    background-color: purple; 
 }
 
 .carousel-item .img img {
@@ -11,10 +11,11 @@
 }
 
 .carousel-item h2 {
-    color: #333;
+    color: cyan;
 }
 
 .carousel-item p {
+	color: white;
     font-size: 1.2em;
     font-style: italic;
 }
@@ -24,3 +25,34 @@
     margin-top: 10px;
 }
 
+.testimonialsCarousel
+{
+	transform: rotate(-3deg);
+	margin-top: 100px;
+    margin-bottom: 50px; 
+    background-color: cyan
+}
+
+
+.carousel-item
+{
+	background-color: purple
+	padding-top: 20px;
+	padding-bottom: 20px; 
+	padding: 20px; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon 
+{
+    background-color: rgb(58, 58, 58); 
+    padding: 5px;
+	border-radius: 50%;
+
+}
+
+.carousel-control-prev,
+.carousel-control-next 
+{
+    color: rgb(18, 18, 18); 
+}

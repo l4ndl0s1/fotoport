@@ -3,13 +3,13 @@
 	transform: rotate(-3deg);
 	margin-top: 100px;
     margin-bottom: 50px; 
-    background-color: #f8f9fa
+    background-color: cyan
 }
 
 
 .carousel-item
 {
-	background-color: #f8f9fa
+	background-color: purple
 	padding-top: 20px;
 	padding-bottom: 20px; 
 	padding: 20px; 
