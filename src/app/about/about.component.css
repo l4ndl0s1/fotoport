@@ -46,7 +46,7 @@ h1 {
 .videpsup {
   background-color: cyan;
   z-index: 2;
-  color: rgb(174, 165, 183);
+  color: blueviolet;
   transform: rotate(-8deg);
   font-weight: bold;
   border-radius: 15px;
