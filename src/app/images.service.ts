@@ -81,18 +81,13 @@ export class ImageService {
     
     {
       id: 9,
-      src: '12img.jpg',
+      src: '12_img.jpg',
       name: 'Another Image',
       loacation: 'Africa',
       year: 2006,
       price: 2000,
     },
-    
-    
-    
-   
-    
-    {
+  {
       id: 10,
       src: '18_img.jpg',
       name: 'Another Image',
