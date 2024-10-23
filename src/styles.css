@@ -1,30 +1,26 @@
-#testimonialsCarousel
-{
-	margin-top: 100px;
-    margin-bottom: 50px; 
-    background-color: #f8f9fa
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Nabla&family=Sixtyfour+Convergence&display=swap");
+
+#testimonialsCarousel {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  background-color: #f8f9fa;
 }
 
-
-.carousel-item
-{
-	background-color: #f8f9fa
-	padding-top: 20px;
-	padding-bottom: 20px; 
-	padding: 20px; 
+.carousel-item {
+  background-color: #f8f9fa;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding: 20px;
 }
 
 .carousel-control-prev-icon,
-.carousel-control-next-icon 
-{
-    background-color: rgb(58, 58, 58); 
-    padding: 5px;
-	border-radius: 50%;
-
+.carousel-control-next-icon {
+  background-color: rgb(58, 58, 58);
+  padding: 5px;
+  border-radius: 50%;
 }
 
 .carousel-control-prev,
-.carousel-control-next 
-{
-    color: rgb(18, 18, 18); 
+.carousel-control-next {
+  color: rgb(18, 18, 18);
 }

@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #f1f0e8;
+  background-color: #f4f6c7;
 }
 #light {
   color: #8f076b;
@@ -10,8 +10,9 @@
 }
 
 .navbar-nav {
-  background-color: #f1f0e8;
+  background-color: #a3efe9;
   margin-left: auto;
+  width: 70em;
 }
 
 .navbar-nav .nav-link {
@@ -23,4 +24,44 @@
   .offcanvas {
     display: none;
   }
+}
+
+.me-1 {
+  color: rgb(255, 174, 0);
+  margin-top: 1em;
+  margin-left: 2rem;
+  font-size: 40px;
+}
+
+.rotate {
+  transform: rotate(60deg);
+}
+
+.rotate2 {
+  transform: rotate(-13deg);
+  margin-top: 3em;
+}
+.me-2 {
+  color: rgb(108, 180, 0);
+  font-size: 35px;
+  margin-left: 20rem;
+}
+
+.me-3 {
+  color: rgb(255, 0, 0);
+  font-size: 120px;
+  margin-left: 5rem;
+}
+
+.rotate3 {
+  transform: rotate(5deg);
+}
+
+#signature {
+  font-family: "Londrina Sketch", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 3.5rem;
+  transform: rotate(-35deg);
+  margin-left: 3em;
 }
