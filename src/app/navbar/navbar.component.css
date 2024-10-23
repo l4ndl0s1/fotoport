@@ -1,4 +1,8 @@
 .navbar {
+  width: 100% !important;
+  height: 5rem !important;
+}
+.navbar {
   background-color: #f4f6c7;
 }
 #light {
@@ -13,19 +17,18 @@
   background-color: #a3efe9;
   margin-left: auto;
   width: 70em;
-  height: 4rem;
 }
 
 .navbar-nav .nav-link {
   margin-right: 15px;
   color: #96b6c5;
 }
-/* 
+
 @media (min-width: 768px) {
   .offcanvas {
     display: none;
   }
-} */
+}
 
 .me-1 {
   color: rgb(255, 174, 0);
@@ -67,4 +70,3 @@
   transform: rotate(-20deg);
   margin-left: 3em;
 }
-

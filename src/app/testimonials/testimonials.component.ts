@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-testimonials',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./testimonials.component.css'],
 })
 export class TestimonialsComponent {
-  // You can add properties or methods here if needed
+  @ViewChild('hoverSound') hoverSound!: ElementRef<HTMLAudioElement>;
+
+  playSound(): void {
+    this.hoverSound.nativeElement.play();
+  }
 }
