@@ -27,6 +27,9 @@ video {
   transform: rotate(7deg);
   width: 100%;
 }
+.buttonr:hover {
+  z-index: 4;
+}
 
 .text {
   color: blueviolet;
