@@ -74,30 +74,6 @@ export class ImageService {
       year: 2004,
       price: 2000,
     },
-<<<<<<< HEAD
-  
-    
-   
-    
-    {
-      id: 9,
-      src: '12_img.jpg',
-      name: 'Another Image',
-      loacation: 'Africa',
-      year: 2006,
-      price: 2000,
-    },
-  {
-      id: 10,
-      src: '18_img.jpg',
-      name: 'Another Image',
-      loacation: 'Africa',
-      year: 2006,
-      price: 2000,
-    },
-=======
-
->>>>>>> cbf9b6599117f91e24c37540cf397d8d8d862668
     {
       id: 11,
       src: '19_img.jpg',
